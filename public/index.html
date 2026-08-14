@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>OSSNet — chart the open-source network</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+<div class="app">
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand__mark">✦</span>
+      <span class="brand__name">OSSNet</span>
+    </div>
+    <form class="search" id="search-form" autocomplete="off">
+      <input type="text" id="search-input" placeholder="Search a developer or role — try “Rust” or “Amara”" />
+      <button type="submit">Search</button>
+    </form>
+  </header>
+
+  <div class="layout">
+
+    <aside class="sidebar">
+      <div class="sidebar__section">
+        <h2>Technology communities</h2>
+        <p class="hint">Click one to see who works in it.</p>
+        <ul id="tech-list" class="chip-list"><li class="hint">Loading…</li></ul>
+      </div>
+
+      <div class="sidebar__section">
+        <h2>Connection finder</h2>
+        <p class="hint">Shortest path between two developers, through who knows whom.</p>
+        <input type="text" id="path-from" placeholder="From developer id (e.g. dev_1)" />
+        <input type="text" id="path-to" placeholder="To developer id (e.g. dev_9)" />
+        <button id="path-btn" class="btn-secondary" type="button">Find path</button>
+        <div id="path-result"></div>
+      </div>
+    </aside>
+
+    <main class="content" id="content">
+      <!-- Populated by app.js: landing state, developer profile, or search results -->
+    </main>
+
+  </div>
+
+  <div id="toast" class="toast" hidden></div>
+</div>
+
+<script src="/js/app.js"></script>
+</body>
+</html>
