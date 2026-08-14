@@ -209,7 +209,7 @@ frontend, so it deploys to any free Node host (Render, Railway, Fly.io,
 Cyclic, etc.) — set the same three `COGNODB_*` environment variables there
 that you set locally, plus `PORT` if the platform requires it.
 
-**Live demo:** _add your hosted URL here before submitting_
+**Live demo:** https://ossnet.onrender.com
 **Screen recording:** _add your recording link here before submitting_
 
 ---
